@@ -315,7 +315,9 @@
                     </div>
 
                     <div class="modal-action">
-                        <label for="{componentId}" on:click={add} class="btn btn-accent">添加模板</label>
+                        <label aria-hidden="true"  for="{componentId}" on:click={add} class="btn btn-accent">添加模板</label>
+                        <!-- TODO: remove this hack. 添加了一个新的按钮 -->
+                        <button on:click={add} >添加模板</button>
                         <label aria-hidden="true"  for="{componentId}" class="btn">Close</label>
                     </div>
                 </div>
